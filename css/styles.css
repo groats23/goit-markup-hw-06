@@ -716,7 +716,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  overflow: scroll;
+  /* overflow: scroll; */
 
   min-width: 408px;
   min-height: 576px;
@@ -759,6 +759,16 @@ img {
 .modal-link:hover .modal-icon,
 .modal-link:focus .modal-icon {
   fill: #ffffff;
+}
+
+.modal-text {
+  margin: 72px 24px 16px 24px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
 }
 
 /* /Modal close button */

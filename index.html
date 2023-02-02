@@ -488,16 +488,90 @@
     <!--/website footer-->
 
     <!-- Modal Window -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <a class="modal-link" href>
           <svg class="modal-icon" data-modal-close width="8" height="8">
             <use href="./images/traling_icons/sprite.svg#close"></use>
           </svg>
         </a>
+
+        <!-- Form -->
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+
+        <form class="modal-form">
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Name</span>
+            <input
+              class="modal-form-input"
+              name="user_name"
+              type="text"
+              required
+              pattern="^[a-zA-Zа-яА-ЯіІїЇ]+"
+              minlength="2"
+            />
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Phone</span>
+            <input
+              class="modal-form-input"
+              name="user_phone"
+              type="tel"
+              title="xxx-xxx-xx-xx"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            />
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Email</span>
+            <input
+              class="modal-form-input"
+              name="user_email"
+              type="email"
+              required
+            />
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Comment</span>
+            <textarea
+              class="modal-form-message"
+              id
+              name="user_message"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <input
+            class="modal-form-check"
+            id="Privacy Policy"
+            name="user_privacy_policy"
+            type="checkbox"
+          />
+          <label class="modal-form-check-desc" for="Privacy Policy"
+            >I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
+          </label>
+
+          <button class="modal-fotm-send" type="submit">Send</button>
+        </form>
+        <!-- /Form -->
       </div>
     </div>
     <!-- /Modal Window -->
+
+    <!-- Футер форма отправки -->
+
+    <form action="">
+      <label for="">
+        <input class name type="text" />
+      </label>
+
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <!-- /Футер форма отправки -->
 
     <script src="./js/modal.js"></script>
   </body>
