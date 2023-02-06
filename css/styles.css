@@ -941,11 +941,16 @@ img {
   margin-left: 80px;
 }
 
+.ppp {
+  display: flex;
+}
+
 .footer-modal-input {
   width: 264px;
   height: 40px;
   margin-right: 24px;
   padding-left: 16px;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--primary-text-color);
@@ -957,7 +962,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 165px;
   height: 40px;
   background-color: var(--accent-text-color);
   color: var(--white-color);
@@ -970,6 +975,6 @@ img {
   background-color: var(--button-hover-color);
 }
 
-.footer-icon-send {
+.footer-modal-btn {
   gap: 16px;
 }
